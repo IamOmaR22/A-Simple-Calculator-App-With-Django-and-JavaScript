@@ -1,0 +1,58 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+    .container-fluid a {
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 1.1em;
+        /* background: linear-gradient(120deg, #0cf9e5, #5a84eb); */
+        color: rgb(63, 39, 39);
+    }
+
+    .online {
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 1.8em;
+        color: wheat;
+        margin-left: -35px;
+    }
+
+    #brand-logo {
+        font-size: 34px;
+    }
+
+    #app-navbar {
+        /* background: linear-gradient(120deg, #0cf9e5, #5a84eb); */
+        /* background: linear-gradient(120deg, #b92b27, #1565c0); */
+        /* background: linear-gradient(120deg, #17073b, #08488d); */
+        background: linear-gradient(120deg,#2C3E50, #08488d);
+        /* background: linear-gradient(120deg,#2a3949, #084280); */
+        /* background: linear-gradient(120deg,#08488d, #2C3E50); */
+        /* background: linear-gradient(120deg, #2C3E50, #005F56); */
+        /* background: linear-gradient(120deg, #1565c0, #b92b27); */
+    }
+    
+    .navbar-brand { 
+        padding: 15px 15px;
+        height: 50px;
+    }
+
+    #brand-logo { 
+        padding: 0px 0px;
+        margin-top: -5px;
+    }
+</style>
+
+<nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+    <div class="container-fluid"><a class="navbar-brand" href="/"><i class="fa fa-life-ring" id="brand-logo"></i></a><span class="online">Online Quiz</span><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/teacher/teacherclick">Teacher</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/student/studentclick">Student</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/adminclick">Admin</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/aboutus">About Us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
