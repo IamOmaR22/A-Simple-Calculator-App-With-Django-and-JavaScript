@@ -10,16 +10,20 @@
 	<title>Calculator</title>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="{% static "css/calc.css" %}">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
 </head>
+<style>
+	.jumbotron{
+		background: linear-gradient(120deg,#2C3E50, #08488d);
+	}
+</style>
 <body>
-	<div class="container">
+	<div class="container my-5">
 		<div class="jumbotron">
 			<h1 class="display-3">A Simple Calculator Web Application</h1>
 			<p class="lead text-center text-success">This is a simple calculator application developed by Md. Omar Faruk.</p>
 			<hr class="my-4">
 		</div>
-
 
 		<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
 
@@ -63,4 +67,6 @@
 	<script type="text/javascript" src="{% static "js/calc.js" %}"></script>
 </body>
 </html>
+
+{% include '_partials/footer.html' %}
 {% endblock %}
