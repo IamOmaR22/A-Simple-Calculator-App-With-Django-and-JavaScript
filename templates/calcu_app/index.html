@@ -18,11 +18,10 @@
 	}
 </style>
 <body>
-	<div class="container my-5">
+	<div class="container my-3">
 		<div class="jumbotron">
-			<h1 class="display-3">A Simple Calculator Web Application</h1>
-			<p class="lead text-center text-success">This is a simple calculator application developed by Md. Omar Faruk.</p>
-			<hr class="my-4">
+			<h1 class="display-6 text-warning" style="margin-top: -5%; text-align: center;">A Simple Calculator Web Application</h1>
+			<p class="lead text-center text-success" style="margin-bottom: -5%;">This is a simple calculator application developed by Md. Omar Faruk.</p>
 		</div>
 
 		<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
@@ -67,6 +66,6 @@
 	<script type="text/javascript" src="{% static "js/calc.js" %}"></script>
 </body>
 </html>
-
+<br>
 {% include '_partials/footer.html' %}
 {% endblock %}
