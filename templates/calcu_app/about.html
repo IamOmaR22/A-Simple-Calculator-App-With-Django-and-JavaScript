@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+{% include '_partials/navbar.html' %}
+
+<style>
+    a {
+    text-decoration: none !important;
+}
+</style>
+<section id="showcase-inner" class="py-5 text-warning">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">This Is A Simple Calculator Website Site</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-2">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">   <!-- index is name of the urls -->
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4" style="text-align: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-success">You Can Do Your Calculation Here</h2>
+          <p class="lead text-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <img class="w-75" src="{% static 'img/about.jpg' %}" alt="">
+          <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
+            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<br>
+{% include '_partials/footer.html' %}
+{% endblock %}
